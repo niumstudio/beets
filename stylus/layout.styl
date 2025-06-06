@@ -4,10 +4,10 @@ body footer
 @media ttrigger  
     body > header
         display: flex
-        justify-content: space-between
+        justify-content: center
         align-items: center
         flex-wrap: wrap
-        padding: padXXS padXXS
+        padding: 0 padStd
         width:100%
         //border-top: 1px solid whiteAlp50
     body > footer
@@ -20,10 +20,11 @@ body footer
     body > footer > div
         flex: 1 1 45%
     body > header.fixed
-        min-height: navHeightL
-        position: absolute
+        //min-height: navHeightL
+        position: fixed
         z-index: 2000
-        //background-color: whiteAlp25
+        bottom: 0
+
     body > header.sticky
         min-height: navHeight
         position: fixed
@@ -34,7 +35,23 @@ body footer
     body > header > *
         margin-left: marStd*1.5
         margin-right: marStd*1.5
-   
+    body > header.fixed nav.navTrigger
+        display: flex
+        width:100%
+        column-gap: 2.5em
+    body > header.fixed nav.navTrigger > *
+        flex: 1 1 12.5%
+        text-decoration: none
+
+    body > header.fixed nav.navTrigger > *:last-child
+        text-align: right
+        text-decoration: underline
+        border-bottom: none !important
+        font-weight: 400
+
+    
+
+
 body > footer
     color: whire
     @media phoneRule
@@ -79,7 +96,7 @@ div.content > section > div
     padding-right: padL   
 *.fullH
     min-height: fullH
-    display: flex
+    //display: flex
     @media mtrigger
         min-height: fullH - navHeight
 *.largeH
@@ -308,15 +325,17 @@ a.itemLink span i
     align-self: center
 
 
-
+div.insetContent.activeContent
+    background-color: whiteAlp05
 
 div.insetContent
     width:100%
-    display: flex
+    //display: flex
     background-repeat: no-repeat
     background-size: 101% auto
     @media dtrigger
-        padding: padXL marXL padXL marXL
+        padding: padM*1.5 padM padM padM
+    
 div.insetContent2
     @media dtrigger
         padding: padXL marXL padXL*1.5 marXL
@@ -324,9 +343,11 @@ div.insetContent > div
     position: relative
 div.innerContent
     z-index: 200
-    display: flex
+    //display: flex
     flex-wrap: wrap
     width: 100%
+    padding-left: padM
+    padding-right: padM
     @media phoneRule
         display: block
         text-align: center
@@ -502,7 +523,10 @@ div.sec3
     width: 100%
     height: 100%
     @media dtrigger
-        //position: fixed
+        position: fixed
+
+
+
 
 
 
@@ -515,5 +539,7 @@ div.sec3
 // large desktop
 @media lgdesktopRule
     main > div:not(.base) div.innerContent
+    header > nav
         max-width: 2000px
         margin: 0px auto
+    

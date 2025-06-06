@@ -1,7 +1,7 @@
 // typo defaults
 a:link, a:visited
-    color: brand1
-    text-decoration: none
+    color: white
+    text-decoration: underline
 p a:link,
 p a:visited,
 li a:link,
@@ -11,8 +11,7 @@ li a:visited
 #navHeader a:link, #navHeader a:visited
     color: brand5
 
-.activeLink
-    font-weight: 600 !important
+
 
 // custom typo
 ul
@@ -83,6 +82,8 @@ ul p
 
 
 
+
+
 .activeLink, 
 nav a:hover,
 p a:hover,
@@ -97,26 +98,31 @@ nav a:hover
 
 // nav typo
 nav > *
-    font-weight:400 !important
-    padding: padXXS*0.9 padXXS
+    font-weight:bold
+    padding: padXXS*0.9 padXXS padXXS*0.9 0
     transition: 0.5s
     @media dtrigger
-        font-size:1.1em
+        font-size:.98em
+
+
+
 
 /* dark slider nav */    
 body.darkSlider > header.fixed .siteLogo span,
 body.darkSlider > header.fixed nav a.activeLink,
 body.darkSlider > header.fixed nav a.activeLink:hover
-    color: white !important
-    border-bottom: 3px solid white !important
+    color: brand2 !important
+    border-bottom: none !important
 body.darkSlider > header.fixed nav a,
 body.darkSlider > header.fixed nav a.ctaButton
-    color: brand2 !important
-    border-bottom: 3px solid rgba(0,0,0,0) !important
-body.darkSlider > header.fixed nav a:not(.icon):hover
-    color: brand2 !important
-    border-bottom: 3px solid brand2 !important
-
+    color: white !important
+    border-bottom: 2px solid rgba(255,255,255,1.0) !important
+body.darkSlider > header.fixed nav a:not(.activeLink):hover
+    color: brand5 !important
+    transition: 0.5s
+    border-bottom: 2px solid brand5 !important
+body.darkSlider > header.fixed nav a:last-child:not(.activeLink):hover
+        border-bottom: none !important
 /* light slider nav */    
 body.lightSlider > header.fixed .siteLogo span,
 body.lightSlider > header.fixed nav a.activeLink
@@ -169,10 +175,10 @@ h1, h2, h3, h4 ,h5, h6
 
 // defaults   
 h1
-    font-weight: 600
-    font-size: 4.8em
+    font-weight: 500
+    font-size: 2.6em
     line-height: 1.05em
-    letter-spacing: -0.01em
+    letter-spacing: -0.03em
     
 h2
     font-weight: 600
@@ -186,15 +192,16 @@ h3
     line-height: 115%
     letter-spacing: 0.02em 
 h4
-    font-weight: 300
+    font-weight: 500
     font-size: 1.6em
     line-height: 130%
+    margin-bottom: 5px
     //letter-spacing: -0.01em
 h4 span
     font-weight: 400    
 h5
     font-weight: 300
-    font-size: 1.5em
+    font-size: 1.2em
     line-height: 125%
     margin-bottom: 0
     //max-width:90%
@@ -203,10 +210,10 @@ h5 span
     font-weight: 400
     //letter-spacing: -0.01em      
 h6
-    font-weight: 500
-    font-size:0.9em
+    font-weight: 300
+    font-size:1.1em
     line-height: 130%
-    max-width:90%
+    //max-width:90%
     //letter-spacing: -0.015em
 p
     font-weight: 400
@@ -221,8 +228,8 @@ strong
 // modify typo
 .small
     font-size: 0.95em    
-
-
+.balanced
+    text-wrap: balance
 
 // footer
 body > footer
@@ -341,9 +348,10 @@ div.sec4 a.extLink:visited
 
 //text effects 
 .responsiveLarge
-    font-size: 7.5vw
+    font-size: 6vw
     line-height: 95%
     letter-spacing: -0.3vw
+    font-weight: 700
     @media phoneRule
         font-size:6.5vh
         line-height: 110%
@@ -368,7 +376,8 @@ div.sec4 a.extLink:visited
     -webkit-text-stroke-color: brand5
 .strokeBrand6
     -webkit-text-stroke-color: brand6
-
+.light
+    font-weight: 300
 @media ttrigger
     .restrictWidth
         max-width: 60%

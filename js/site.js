@@ -32,34 +32,6 @@
     // mobile top scroll
     //$('#navMobile').hide();
     
-    new Waypoint({
-    element: document.getElementsByTagName('body'),
-    handler: function(direction) {
-        if (direction === 'down') {
-            $('#navMobile').fadeTo(1000,'1.0');
-        }
-        else {
-            $('#navMobile').hide();
-        }
-    },
-        offset: '-50%'
-    });
-    new Waypoint({
-        element: document.getElementById('inpageNav'),
-        handler: function(direction) {
-            if (direction === 'down') {
-                //$('header.sticky').animate({opacity: "show"}, {queue : false, duration:250});
-                $('header.sticky').fadeTo(250,'1.0');
-
-            }
-            else {
-                $('header.sticky').animate({opacity: "hide"}, {queue : false, duration:250});
-            }
-        },
-            offset: '25%'
-        })
-
-
        
 
 
@@ -187,6 +159,49 @@
     });
 
 
+
+
+
+    //$('.downloadsContent').hide();
+
+    $('.closeContent').click(function(){
+        $('.downloadsContent').fadeTo(250,0).delay(250).hide();  
+        $('.navTrigger a').removeClass('activeLink');
+        return false;
+    });
+
+    $('.navTrigger a').click(function(){
+        $('.downloadsContent').hide();      
+        $('.navTrigger a').removeClass('activeLink');
+        $(this).addClass('activeLink');
+        return false;
+    });
+
+
+    $('.navTrigger a#t1').click(function(){
+        $('#panel1').fadeTo(250,1);
+        return false;
+    });
+    $('.navTrigger a#t2').click(function(){
+        $('#panel2').fadeTo(250,1);
+        return false;
+    });
+    $('.navTrigger a#t3').click(function(){
+        $('#panel3').fadeTo(350,1);
+        return false;
+    });
+    $('.navTrigger a#t4').click(function(){
+        $('#panel4').fadeTo(250,1);
+        return false;
+    });
+    $('.navTrigger a#t5').click(function(){
+        $('#panel5').fadeTo(250,1);
+        return false;
+    });
+    $('.navTrigger a#t6').click(function(){
+        $('#panel6').fadeTo(250,1);
+        return false;
+    });
 
     
 });

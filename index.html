@@ -50,231 +50,290 @@
 
 <body id="home" class="home darkTheme darkSlider">
 
-    <div id="navMobile">
-        <a href="#home" id="toTop" class="icon"><i class="icon-ctrl"></i></a>
-    </div>
+	
 
-
-    <div id="navHeader" class="navHeight m">
-        <a href="#home" class="imgText siteLogo">
-            <picture class="logoAsset">
-                <img src="/images/logo.svg" alt="Beets">
-            </picture>     
-        </a>
-
-        <div id="mblNavControl">
-            <a href="#" id="navTrigger" class="icon"><i class="icon-menu"></i></a>
-            <a href="#" id="navClose" class="icon"><i class="icon-cross"></i></a>
-        </div>
-    </div>
-
-    <div class="mblnav m">
-        <div class="mblnavContainer">
-            <div class="navHeight">&nbsp;</div>
-                <div class="containMNav">
-                    <nav>
-                       <a href="#sec3" class="inpage">Logos &amp; Tokens</a>
-                        <a href="#sec4" class="inpage">Brand Colors</a>
-                        <a href="#sec5" class="inpage">Characters</a>
-                        <a href="#sec6" class="inpage">Stickers &amp; Emoji</a>
-                        <a href="#sec7" class="inpage">Backgrounds</a> 
-                    </nav>
-                    
-                    
-
-                    
-                    <div style="text-align: center;">
-                    <a href="https://beets.fi">Beets.fi</a>
-                    &nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href="https://docs.beets.fi/">Beets Docs</a>
-                    <br><br>
-                    <a href="https://beets.fi/discord" class="icon inline"><i class="icon-discord1"></i> </a>
-                    <a href="https://x.com/beets_fi" class="icon inline"><i class="icon-x"></i> </a>
-                    <a href="https://beetsfi.medium.com" class="icon inline"><i class="icon-medium1"></i> </a>
-                    </div>
-                    
-                </div>  
-            </div>
-        <div class="navHeight">&nbsp;</div>  
-    </div>   
-        
-    <!-- end mobile navigation -->
-
-
-
-
-    <header class="fixed d">
-       &nbsp;   
-        
-        <nav>
-            <a href="https://beets.fi">Beets.fi</a>
-            <a href="https://beets.fi/discord" class="icon"><i class="icon-discord1"></i> </a>
-            <a href="https://x.com/beets_fi" class="icon"><i class="icon-x"></i> </a>
-            <a href="https://beetsfi.medium.com" class="icon"><i class="icon-medium1"></i> </a>
-            <a href="https://docs.beets.fi/">Beets Docs</a>
+    <header class="fixed d smallH">
+        <nav class="navTrigger">
+            <a href="#" id="t1">Beets Logos</a>
+            <a href="#" id="t2">Token Images</a>
+            <a href="#" id="t3">Backgrounds</a>
+            <a href="#" id="t4">Goodies</a>
+            <a href="#" id="t5">Fonts</a>
+            <a href="#" id="t6">Colors</a>
+            <a href="https://beets.fi">beets.fi</a>
         </nav> 
     </header>
 
-    <header class="sticky d">
-        <a href="#home" class="imgText siteLogo">
-            <picture class="logoAsset">
-                <img src="/images/logo.svg" alt="Beets">
-            </picture>   
-        </a>
 
-        <nav>
-            <a href="#sec3" class="inpage">Logos &amp; Tokens</a>
-        <a href="#sec4" class="inpage">Brand Colors</a>
-        <a href="#sec5" class="inpage">Characters</a>
-        <a href="#sec6" class="inpage">Stickers &amp; Emoji</a>
-        <a href="#sec7" class="inpage">Backgrounds</a>
-        <a href="#home" class="inpage"><i class="icon-home"></i></a>
-        </nav> 
-    </header>
 
     <!-- start content -->
     <main>
 
 
 
-        
-        
 
-
-
-
-
-
-
+        <div class="base  gradient5" style="overflow:hidden;">
+          <div class="spinningElement animatedSlow infinite rotateSlow">&nbsp;</div>
+        </div>
 
 
 
 
         <div class="base d">
+           <style>
+              canvas {
+                  width: 100vw;
+                  height: 100vh;
+                  }
 
-            <div class="videoLayer parallaxMe ukiyo" style="z-index: 0" data-u-scale="1.5" data-u-speed="1.75">
-            <div style="margin-top: 25vh;" >
-
-            <div class="slickSlider1" style="overflow: auto;">
-                
-                <div class="container picturefill-background" >
-                    <div class="contentHold crt fullH" >&nbsp;</div>
-                    <!-- span data-src="/images/bgs/1-bg.webp" data-media="(min-width: 1100px)"></span--> 
-                </div>
-
-                <div class="container picturefill-background" >
-                    <div class="contentHold crt fullH" >&nbsp;</div>
-                    <!-- span data-src="/images/bgs/2-bg.webp" data-media="(min-width: 1100px)"></span--> 
-                </div>
-
-                <div class="container picturefill-background" >
-                    <div class="contentHold crt fullH" >&nbsp;</div>
-                    <!-- span data-src="/images/bgs/3-bg.webp" data-media="(min-width: 1100px)"></span--> 
-                </div>
-
-                <div class="container picturefill-background" >
-                    <div class="contentHold crt fullH" >&nbsp;</div>
-                    <!-- span data-src="/images/bgs/4-bg.webp" data-media="(min-width: 1100px)"></span--> 
-                </div>
-
-                <div class="container picturefill-background" >
-                    <div class="contentHold crt fullH" >&nbsp;</div>
-                    <!-- span data-src="/images/bgs/5-bg.webp" data-media="(min-width: 1100px)"></span--> 
-                </div>
-
-                
-                
-            </div>
-
-            </div><!-- ukiyo handler -->
-            </div><!-- parallaxMe -->
-    
+              .hidden {
+                  display: none;
+                  }
+          </style>
+        
+          <canvas id="scene" style="opacity: 0.25;"></canvas>
         </div>
 
 
+         <div class="base" style="background-image: url(/images/tile.webp)"></div>
 
 
 
-        <div class="base m">
 
-            <div class="slickSlider1" style="overflow: auto;">
-                
-                <div class="container picturefill-background" >
-                    <div class="contentHold crt fullH" >&nbsp;</div>
-                    <!-- span data-src="/images/bgs/1-bg-m.webp"></span --> 
-                </div>
 
-                <div class="container picturefill-background" >
-                    <div class="contentHold crt fullH" >&nbsp;</div>
-                    <!-- span data-src="/images/bgs/2-bg-m.webp"></span--> 
-                </div>
 
-                <div class="container picturefill-background" >
-                    <div class="contentHold crt fullH" >&nbsp;</div>
-                    <!-- span data-src="/images/bgs/3-bg-m.webp"></span--> 
-                </div>
 
-                <div class="container picturefill-background" >
-                    <div class="contentHold crt fullH" >&nbsp;</div>
-                    <!-- span data-src="/images/bgs/4-bg-m.webp"></span--> 
-                </div>
 
-                <div class="container picturefill-background" >
-                    <div class="contentHold crt fullH" >&nbsp;</div>
-                    <!-- span data-src="/images/bgs/5-bg-m.webp"></span--> 
-                </div>
-                
+      <div>
+        <div class="container fullH">
+          <div class="innerContent">
+
+                            
+					<div class="smallH tC cC">
+					<span class="spacer spacer10"></span>             
+						<picture class="logoAsset">
+							<img src="/images/beets-stacked-logo.svg" alt="Beets">
+						</picture>
+						<br>
+						<h6>Brand Kit</h6>
+					</div>
+
+
+          <div class="insetContent tC cC  m">
+
+            <p class="balanced">Thanks for visiting the Beets Brand site. This resource is full of downloads for creating Beets-based content, announcements and memes.</p>
+
+            <br>
+            <p class="balanced">Check back in on a desktop or tablet to access all the downloads for editing.</p>
+          </div>
+
+
+
+            <!-- begin hidden panels -->
+            <div class="insetContent tC cC halfH downloadsContent activeContent" id="panel1">             
+                <a href="#" class="closeContent"><i class="icon-clear"></i></a>
+                <h1>Beets Logos</h1>
+                <div class="items compact">
+                  <div class="item rev">
+                    <img src="/assets/logos/logo.png" class="logos"><br>
+                    <h5>Logo</h5>
+                    <a href="/assets/logos/logo.png" download>png</a>&nbsp;,&nbsp;
+                    <a href="/assets/logos/logo@2x.png" download>png @2x</a>&nbsp;,&nbsp;
+                    <a href="/assets/logos/logo.svg" download>svg</a><br>
+                  </div>
+                  <div class="item rev">
+                    <img src="/assets/logos/logo-mark.png" class="logos"><br>
+                    <h5>Logo Mark</h5>
+                    <a href="/assets/logos/logo-mark.png" download>png</a>&nbsp;,&nbsp;
+                    <a href="/assets/logos/logo-mark@2x.png" download>png @2x</a>&nbsp;,&nbsp;
+                    <a href="/assets/logos/logo-mark.svg" download>svg</a><br>
+                  </div>
+                  <div class="item rev">
+                    <img src="/assets/logos/logo-mark-enclosed.png" class="logos"><br>
+                    <h5>Logo Badge</h5>
+                    <a href="/assets/logos/logo-mark-enclosed.png" download>png</a>&nbsp;,&nbsp;
+                    <a href="/assets/logos/logo-mark-enclosed@2x.png" download>png @2x</a>&nbsp;,&nbsp;
+                    <a href="/assets/logos/logo-mark-enclosed.svg" download>svg</a><br>
+                  </div>
+                  <div class="item">
+                    <img src="/assets/logos/logo-reversed.png"  class="logos"><br>
+                    <h5>Logo</h5>
+                    <a href="/assets/logos/logo-reversed.png" download>png</a>&nbsp;,&nbsp;
+                    <a href="/assets/logos/logo-reversed@2x.png" download>png @2x</a>&nbsp;,&nbsp;
+                    <a href="/assets/logos/logo-reversed.svg" download>svg</a><br>
+                  </div>
+                  <div class="item">
+                    <img src="/assets/logos/logo-mark-reversed.png"  class="logos"><br>
+                    <h5>Logo Mark</h5>
+                    <a href="/assets/logos/logo-mark-reversed.png" download>png</a>&nbsp;,&nbsp;
+                    <a href="/assets/logos/logo-mark-reversed@2x.png" download>png @2x</a>&nbsp;,&nbsp;
+                    <a href="/assets/logos/logo-mark-reversed.svg" download>svg</a><br>
+                  </div>
+                  <div class="item">
+                    <img src="/assets/logos/logo-mark-reversed-enclosed.png"  class="logos"><br>
+                    <h5>Logo Badge</h5>
+                    <a href="/assets/logos/logo-mark-reversed-enclosed.png" download>png</a>&nbsp;,&nbsp;
+                    <a href="/assets/logos/logo-mark-reversed-enclosed@2x.png" download>png @2x</a>&nbsp;,&nbsp;
+                    <a href="/assets/logos/logo-mark-reversed-enclosed.svg" download>svg</a><br>
+                  </div>
+              </div>
+              <a href="/assets/logos/Beets-logos-all.zip" download class="alignEnd">Download All (.zip)</a>
             </div>
-    
-        </div>
 
-
-
-
-        <div>
-
-            <div class="container">
-                <div class="contentHold fullH gradient5">
-                <div class="insetContent bgPosBottom">
-                <div class="innerContent reverse cC">
-                    
-                        
-                        
-                       <div class="restrictWidth">
-                        <span class="spacer spacer20 m"></span>
-                        <h1 class="responsiveLarge ">
-                            New Beets<br> 
-                            Brand Assets
-                        </h1>
-                        
-                        <div class="d">
-                            <br>
-                            <hr class="small"><br>
-                            <br>
-                        </div>
-                        
-
-                        <h3><strong>Coming Soon</strong></h3>
-                       </div>
-                        
-       
-                    
-                </div>
-                </div>
-                <!-- div class="videoLayer parallaxMe top ukiyo" data-u-scale="1.8" data-u-speed="-0.75">
-                    <div class="offsetFullScreen1 insetContent2 floating">
-                        <div class="square45" style="background-image: url(/images/art/ludwig-reachin.webp);">
-                            &nbsp;
-                        </div>  
-                    </div>
-                </div -->
-                </div>  
+            <div class="insetContent tC cC halfH downloadsContent activeContent" id="panel2">             
+                <a href="#" class="closeContent"><i class="icon-clear"></i></a>
+                <h1>Token Images</h1>
+                <div class="items">
+                  <div class="item">
+                    <img src="/assets/tokens/token-BEETS.png"><br>
+                    <h5>BEETS</h5>
+                    <a href="/assets/tokens/token-BEETS.png" download>png</a>&nbsp;,&nbsp;
+                    <a href="/assets/tokens/token-BEETS@2x.png" download>png @2x</a>&nbsp;,&nbsp;
+                    <a href="/assets/tokens/token-BEETS.svg" download>svg</a><br>
+                  </div>
+                  <div class="item">
+                    <img src="/assets/tokens/token-beets-staked-sonic.png"><br>
+                    <h5>Staked Sonic (sTS)</h5>
+                    <a href="/assets/tokens/token-beets-staked-sonic.png" download>png</a>&nbsp;,&nbsp;
+                    <a href="/assets/tokens/token-beets-staked-sonic@2x.png" download>png @2x</a>&nbsp;,&nbsp;
+                    <a href="/assets/tokens/token-beets-staked-sonic.svg" download>svg</a><br>
+                  </div>
+                  <div class="item">
+                    <img src="/assets/tokens/token-maBEETS.png"><br>
+                    <h5>maBEETS</h5>
+                    <a href="/assets/tokens/token-maBEETS.png" download>png</a>&nbsp;,&nbsp;
+                    <a href="/assets/tokens/token-maBEETS@2x.png" download>png @2x</a>&nbsp;,&nbsp;
+                    <a href="/assets/tokens/token-maBEETS.svg" download>svg</a><br>
+                  </div>
+                  
+              </div>
+              <a href="/assets/tokens/beets-tokens.zip" download class="alignEnd">Download All (.zip)</a>
             </div>
 
+            <div class="insetContent tC cC halfH downloadsContent activeContent" id="panel3">             
+                <a href="#" class="closeContent"><i class="icon-clear"></i></a>
+                <h1>Backgrounds</h1>
+                <div class="items">
+                  <div class="item">
+                    <img src="/assets/backgrounds/red/1920x1080@0.15x.png"><br>
+                    <a href="/assets/backgrounds/red/2500x1250.png" download>XL</a>&nbsp;,&nbsp;
+                    <a href="/assets/backgrounds/red/1920x1080.png" download>1920x1080</a>&nbsp;,&nbsp;
+                    <a href="/assets/backgrounds/red/1008x1792.png" download>Phone</a><br>
+                    <a href="/assets/backgrounds/red/beets-red-bgs.zip" download>Download All (.zip)</a>
+                  </div>
+                    <div class="item">
+                    <img src="/assets/backgrounds/green/1920x1080@0.15x.png"><br>
+                    <a href="/assets/backgrounds/green/2500x1250.png" download>XL</a>&nbsp;,&nbsp;
+                    <a href="/assets/backgrounds/green/1920x1080.png" download>1920x1080</a>&nbsp;,&nbsp;
+                    <a href="/assets/backgrounds/green/1008x1792.png" download>Phone</a><br>
+                    <a href="/assets/backgrounds/green/beets-green-bgs.zip" download>Download All (.zip)</a>
+                  </div>
+                  <div class="item">
+                    <img src="/assets/backgrounds/orange/1920x1080@0.15x.png"><br>
+                    <a href="/assets/backgrounds/orange/2500x1250.png" download>XL</a>&nbsp;,&nbsp;
+                    <a href="/assets/backgrounds/orange/1920x1080.png" download>1920x1080</a>&nbsp;,&nbsp;
+                    <a href="/assets/backgrounds/orange/1008x1792.png" download>Phone</a><br>
+                    <a href="/assets/backgrounds/orange/beets-orange-bgs.zip" download>Download All (.zip)</a>
+                  </div>
+                  <div class="item">
+                    <img src="/assets/backgrounds/blue/1920x1080@0.15x.png"><br>
+                    <a href="/assets/backgrounds/blue/2500x1250.png" download>XL</a>&nbsp;,&nbsp;
+                    <a href="/assets/backgrounds/blue/1920x1080.png" download>1920x1080</a>&nbsp;,&nbsp;
+                    <a href="/assets/backgrounds/blue/1008x1792.png" download>Phone</a><br>
+                    <a href="/assets/backgrounds/blue/beets-blue-bgs.zip" download>Download All (.zip)</a>
+                  </div>
+                  <div class="item">
+                    <img src="/assets/backgrounds/mono/1920x1080@0.15x.png"><br>
+                    <a href="/assets/backgrounds/mono/2500x1250.png" download>XL</a>&nbsp;,&nbsp;
+                    <a href="/assets/backgrounds/mono/1920x1080.png" download>1920x1080</a>&nbsp;,&nbsp;
+                    <a href="/assets/backgrounds/mono/1008x1792.png" download>Phone</a><br>
+                    <a href="/assets/backgrounds/mono/beets-mono-bgs.zip" download>Download All (.zip)</a>
+                  </div>
+                      
+              </div>
+              <a href="/assets/backgrounds/beets-all-bgs.zip" download class="alignEnd">Download All (.zip)</a>
+            </div>
+
+            <div class="insetContent tC cC halfH downloadsContent activeContent" id="panel4">             
+                <a href="#" class="closeContent"><i class="icon-clear"></i></a>
+                <h1>Goodies</h1>
+                <div class="items">
+                  <div class="item">
+                    <img src="/assets/thumb-gradients.png"><br>
+                    <h5>Large Gradients (.png)</h5>
+                    <a href="/assets/goodies/gradients.zip" download>Download All (.zip)</a>
+                  </div>
+                  <div class="item">
+                    <img src="/assets/thumb-emojis-1.png"><br>
+                    <h5>Emoji Set 1 (.png .svg)</h5>
+                    <a href="/assets/goodies/set1.zip" download>Download All (.zip)</a>
+                  </div>
+                  <div class="item">
+                    <img src="/assets/thumb-emojis-2.png"><br>
+                    <h5>Emoji Set 2 (.png .svg)</h5>
+                    <a href="/assets/goodies/set2.zip" download>Download All (.zip)</a>
+                  </div>
+                  <div class="item">
+                    <img src="/assets/thumb-emojis-3.png"><br>
+                    <h5>Emoji Set 3 (.png .svg)</h5>
+                    <a href="/assets/goodies/set3.zip" download>Download All (.zip)</a>
+                  </div>
+              </div>
+            </div>
+
+            <div class="insetContent tC cC halfH downloadsContent activeContent" id="panel5">             
+                <a href="#" class="closeContent"><i class="icon-clear"></i></a>
+                <h1>Satoshi Font</h1>
+                <br>
+
+                <h1 class="responsiveLarge">AaBbCc 12345</h1>
+                <h1 class="responsiveLarge light">AaBbCc 12345</h1>
+
+                <br>
+                <a href="https://www.fontshare.com/fonts/satoshi" target="_blank">Download (via Fontshare) <i class="icon-call_made"></i> </a>
+
+            </div>
+
+            <div class="insetContent tC cC halfH downloadsContent activeContent" id="panel6">             
+                <a href="#" class="closeContent"><i class="icon-clear"></i></a>
+                <h1>Colors</h1>
+                <div class="items compact noHeight">
+                  <div class="item brand0">
+                    <h4 class="text-to-copy">#111111</h4>
+                    <button class="copy-button ctaButton">Copy Hex</button>
+                    <h5>RGB:17/17/17</h5>
+                  </div>
+                  <div class="item brand2">
+                    <h4 class="text-to-copy">#ff0000</h4>
+                    <button class="copy-button ctaButton">Copy Hex</button>
+                    <h5>RGB:255/0/0</h5>
+                  </div>
+                  <div class="item rev brand3">
+                    <h4 class="text-to-copy">#00ffff</h4>
+                    <button class="copy-button ctaButton">Copy Hex</button>
+                    <h5>RGB:0/255/255</h5>
+                  </div>
+                  <div class="item brand4">
+                    <h4 class="text-to-copy">#2e3192</h4>
+                    <button class="copy-button ctaButton">Copy Hex</button>
+                    <h5>RGB:46/49/146</h5>
+                  </div>
+                  <div class="item rev brand5">
+                    <h4 class="text-to-copy">#00f89c</h4>
+                    <button class="copy-button ctaButton">Copy Hex</button>
+                    <h5>RGB:0/248/156</h5>
+                  </div>
+
+                
+                
+              </div>
+            </div>
+            <!-- end hidden panels -->
+
+              
+            </div>
+          </div>
         </div>
-
-
-
 
 
 
@@ -301,6 +360,70 @@
 
 
     
+
+
+
+
+
+
+    
+
+    <div id="svgs" class="hidden">
+
+          <svg  name="Layer 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="750" height="750">
+            <rect class="cls-2" x="318.28" y="362.57" width="35.94" height="35.94" rx="17.97" ry="17.97" transform="translate(716.79 44.29) rotate(90)"/>
+            <rect class="cls-3" x="145.78" y="362.57" width="35.94" height="35.94" rx="17.97" ry="17.97" transform="translate(544.29 216.79) rotate(90)"/>
+          </svg>
+
+                      <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 750">
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <path d="M640.17,109.83C572.3,41.97,478.56,0,375,0,167.89,0,0,167.89,0,375v375h750v-375c0-103.55-41.97-197.31-109.83-265.17ZM300.66,654.13c-16.96,16.97-40.4,27.46-66.29,27.46s-49.32-10.49-66.29-27.46c-16.96-16.96-27.46-40.4-27.46-66.29,0-51.78,41.98-93.75,93.75-93.75,25.89,0,49.33,10.49,66.29,27.46,16.97,16.96,27.46,40.4,27.46,66.29s-10.49,49.33-27.46,66.29ZM581.91,654.13c-16.96,16.97-40.4,27.46-66.29,27.46s-49.32-10.49-66.29-27.46c-16.97-16.96-27.46-40.4-27.46-66.29,0-51.78,41.98-93.75,93.75-93.75,25.89,0,49.33,10.49,66.29,27.46,16.97,16.96,27.46,40.4,27.46,66.29s-10.49,49.33-27.46,66.29Z"/>
+      <path d="M515.62,558.54c-16.18,0-29.29,13.12-29.29,29.3,0,8.09,3.28,15.41,8.58,20.72,5.3,5.3,12.62,8.58,20.71,8.58s15.42-3.28,20.72-8.58c5.3-5.31,8.58-12.63,8.58-20.72s-3.28-15.41-8.58-20.72c-5.3-5.3-12.63-8.58-20.72-8.58Z"/>
+      <path d="M234.37,558.54c-16.18,0-29.29,13.12-29.29,29.3,0,8.09,3.28,15.41,8.58,20.72,5.3,5.3,12.62,8.58,20.71,8.58s15.41-3.28,20.72-8.58c5.3-5.31,8.58-12.63,8.58-20.72s-3.28-15.41-8.58-20.72c-5.31-5.3-12.63-8.58-20.72-8.58Z"/>
+    </g>
+  </g>
+</svg>
+         
+          <svg  name="Layer 4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="750" height="750">
+            <rect class="cls-4" x="278.75" y="323.04" width="115" height="115" rx="57.5" ry="57.5" transform="translate(716.79 44.29) rotate(90)"/>
+            <rect class="cls-4" x="106.25" y="323.04" width="115" height="115" rx="57.5" ry="57.5" transform="translate(544.29 216.79) rotate(90)"/>
+            <rect class="cls-2" x="318.28" y="362.57" width="35.94" height="35.94" rx="17.97" ry="17.97" transform="translate(716.79 44.29) rotate(90)"/>
+            <rect class="cls-3" x="145.78" y="362.57" width="35.94" height="35.94" rx="17.97" ry="17.97" transform="translate(544.29 216.79) rotate(90)"/>
+          </svg>
+
+          <svg name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="750" height="750">
+            <path class="cls-4" d="M250,20h0C122.97,20,20,122.97,20,250h0v230h460v-230h0c0-127.03-102.97-230-230-230Z"/>
+          </svg>
+
+
+
+          <svg name="Layer 5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="750" height="750">
+            <path class="cls-4" d="M250,20h0C122.97,20,20,122.97,20,250h0v230h460v-230h0c0-127.03-102.97-230-230-230Z"/>
+          </svg>
+    
+          <svg  name="Layer 6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="750" height="750">
+            <rect class="cls-4" x="278.75" y="323.04" width="115" height="115" rx="57.5" ry="57.5" transform="translate(716.79 44.29) rotate(90)"/>
+            <rect class="cls-4" x="106.25" y="323.04" width="115" height="115" rx="57.5" ry="57.5" transform="translate(544.29 216.79) rotate(90)"/>
+            <rect class="cls-2" x="318.28" y="362.57" width="35.94" height="35.94" rx="17.97" ry="17.97" transform="translate(716.79 44.29) rotate(90)"/>
+            <rect class="cls-3" x="145.78" y="362.57" width="35.94" height="35.94" rx="17.97" ry="17.97" transform="translate(544.29 216.79) rotate(90)"/>
+          </svg>
+
+
+          <svg id="Layer_8" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 750">
+  <g id="Layer_1-8" data-name="Layer 1">
+    <g>
+      <path d="M640.17,109.83C572.3,41.97,478.56,0,375,0,167.89,0,0,167.89,0,375v375h750v-375c0-103.55-41.97-197.31-109.83-265.17ZM300.66,654.13c-16.96,16.97-40.4,27.46-66.29,27.46s-49.32-10.49-66.29-27.46c-16.96-16.96-27.46-40.4-27.46-66.29,0-51.78,41.98-93.75,93.75-93.75,25.89,0,49.33,10.49,66.29,27.46,16.97,16.96,27.46,40.4,27.46,66.29s-10.49,49.33-27.46,66.29ZM581.91,654.13c-16.96,16.97-40.4,27.46-66.29,27.46s-49.32-10.49-66.29-27.46c-16.97-16.96-27.46-40.4-27.46-66.29,0-51.78,41.98-93.75,93.75-93.75,25.89,0,49.33,10.49,66.29,27.46,16.97,16.96,27.46,40.4,27.46,66.29s-10.49,49.33-27.46,66.29Z"/>
+      <path d="M515.62,558.54c-16.18,0-29.29,13.12-29.29,29.3,0,8.09,3.28,15.41,8.58,20.72,5.3,5.3,12.62,8.58,20.71,8.58s15.42-3.28,20.72-8.58c5.3-5.31,8.58-12.63,8.58-20.72s-3.28-15.41-8.58-20.72c-5.3-5.3-12.63-8.58-20.72-8.58Z"/>
+      <path d="M234.37,558.54c-16.18,0-29.29,13.12-29.29,29.3,0,8.09,3.28,15.41,8.58,20.72,5.3,5.3,12.62,8.58,20.71,8.58s15.41-3.28,20.72-8.58c5.3-5.31,8.58-12.63,8.58-20.72s-3.28-15.41-8.58-20.72c-5.31-5.3-12.63-8.58-20.72-8.58Z"/>
+    </g>
+  </g>
+</svg>
+
+    </div>
+
+
+
 
 
 
@@ -353,6 +476,226 @@
       });
     });
   </script>
+
+
+  <script>
+    $(document).ready(function() {
+      $('div.item .copy-button').click(function() {
+        var textToCopy = $(this).parent().find('.text-to-copy').text();
+        var tempTextarea = $('<textarea>');
+        $('body').append(tempTextarea);
+        tempTextarea.val(textToCopy).select();
+        document.execCommand('copy');
+        tempTextarea.remove();
+        $('div.item .copy-button').text('Copy Hex');
+        $(this).text('Copied');
+        return false
+      });
+    });
+  </script>
+
+
+
+
+<script type="text/javascript">
+
+var canvas = document.querySelector("#scene"),
+ctx = canvas.getContext("2d"),
+particles = [],
+amount = 1,
+mouse = { x: 0, y: 0 },
+radius = 1;
+
+var ppi = 10;
+
+var colors = ["rgb(255 255 255 / 90%)", "rgb(255 255 255 / 60%)", "rgb(255 255 255 / 40%)", "rgb(255 255 255 / 20%)", "rgb(255 255 255 / 10%)"];
+var ww = canvas.width = window.innerWidth;
+var wh = canvas.height = window.innerHeight;
+
+function shuffle(a) {
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+function createImage(path) {
+  return new Promise((resolve, reject) => {
+    const img = new Image();
+    img.onload = () => resolve(img);
+    img.onerror = () => reject({ path, status: 'error' });
+    img.src = path;
+  });
+}
+
+class Particle {
+  constructor(options) {
+    Object.assign(this, options);
+    this.accX = 0;
+    this.accY = 0;
+    this.friction = Math.random() * 0.05 + 0.94;
+    this.friction = 0.9;
+    this.color = colors[Math.floor(Math.random() * 5)];
+    // this.color = '#ffffff';
+    this.dest = { x: ww / 2, y: wh / 2 };
+    this.visible = true;
+    this.r = Math.random() * 3 + 1;
+  }
+
+  randomVelocity() {
+    this.vx = (Math.random() - 0.5) * 20;
+    this.vy = (Math.random() - 0.5) * 20;
+    return this;
+  }
+
+  static getDistance(a, b) {
+    return Math.sqrt(a * a + b * b);
+  }
+
+  getDistanceTo(target) {
+    var a = this.x - target.x;
+    var b = this.y - target.y;
+    return Math.sqrt(a * a + b * b);
+  }
+
+  update() {
+    this.accX = (this.dest.x - this.x) / 1000;
+    this.accY = (this.dest.y - this.y) / 1000;
+    this.vx += this.accX;
+    this.vy += this.accY;
+    this.vx *= this.friction;
+    this.vy *= this.friction;
+    this.x += this.vx;
+    this.y += this.vy;
+    return this;
+  }
+
+  render() {
+    ctx.save();
+    ctx.fillStyle = this.color;
+    ctx.beginPath();
+    ctx.arc(this.x, this.y, this.r, Math.PI * 2, false);
+    if (!this.visible) {
+      ctx.globalAlpha = 0;
+    }
+    ctx.fill();
+    ctx.restore();
+  }}
+
+
+async function svgImageData(svg) {
+  var src = "data:image/svg+xml," + encodeURIComponent(svg.outerHTML);
+  var img = await createImage(src);
+  ctx.drawImage(img, ww / 2 - img.width / 2, wh / 2 - img.height / 2, img.width, img.height);
+  var data = ctx.getImageData(0, 0, ww, wh).data;
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  var destinations = [];
+  for (var i = 0; i < ww; i += ppi) {
+    for (var j = 0; j < wh; j += ppi) {
+      if (data[(i + j * ww) * 4 + 3] > 150) {
+        var p = { x: i, y: j };
+        destinations.push(p);
+      }
+    }
+  }
+
+  return shuffle(destinations);
+}
+
+function gatherData() {
+  return new Promise(async (resolve, reject) => {
+    var data = {};
+    var svgs = document.querySelectorAll('#svgs svg');
+    for (elm of svgs) {
+      var name = elm.getAttribute('name');
+      var svgData = await svgImageData(elm);
+      data[name] = {
+        data: svgData,
+        length: svgData.length };
+
+    }
+    resolve(data);
+  });
+}
+
+function generateParticles(data) {
+  var particleCount = 0;
+  for (var i in data) {
+    particleCount = data[i].length > particleCount ? data[i].length : particleCount;
+  }
+  var particles = [];
+  for (var i = 0; i < particleCount; i++) {
+    var p = new Particle({
+      x: ww / 2,
+      y: wh / 2 });
+
+    p.randomVelocity();
+    particles.push(p);
+  }
+  return particles;
+}
+
+
+function initScene() {
+  return new Promise(async resolve => {
+    ww = canvas.width = window.innerWidth;
+    wh = canvas.height = window.innerHeight;
+    var data = await gatherData();
+    particles = generateParticles(data);
+    resolve(data);
+  });
+}
+
+function updateParticles(data) {
+  var pLen = particles.length;
+  var dLen = data.length;
+
+  for (var i in particles) {
+    particles[i].visible = false;
+    particles[i].dest = { x: ww / 2, y: wh / 2 };
+    if (data.data.hasOwnProperty(i)) {
+      particles[i].dest = data.data[i];
+      particles[i].visible = true;
+    }
+  }
+}
+
+
+function render(a) {
+  requestAnimationFrame(render);
+  ctx.save();
+  ctx.globalAlpha = 0.1;
+  ctx.fillStyle = "rgb(0 0 0 / 100%)";
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
+  ctx.restore();
+  // ctx.clearRect(0, 0, canvas.width, canvas.height);
+  for (var i in particles) {
+    particles[i].update().render();
+  }
+}
+
+window.addEventListener("resize", initScene);
+initScene().
+then(render()).
+then(data => {
+
+  var length = Object.keys(data).length - 1;
+  var index = 0;
+  updateParticles(data[Object.keys(data)[index]]);
+
+  setInterval(() => {
+    if (index < length) {
+      index++;
+    } else
+    {
+      index = 0;
+    }
+    updateParticles(data[Object.keys(data)[index]]);
+  }, 7500);
+});
+</script>
+
 
 
 

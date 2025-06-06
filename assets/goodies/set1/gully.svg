@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 169.32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #05d690;
+      }
+
+      .cls-3 {
+        fill: red;
+      }
+
+      .cls-4 {
+        fill: #1a1a1a;
+      }
+    </style>
+  </defs>
+  <g id="Layer_6" data-name="Layer 6">
+    <g>
+      <g>
+        <path class="cls-1" d="M199.75,0h0c-38.41.22-69.37,31.53-69.15,69.93h0s.39,69.54.39,69.54l69.54-.39,69.54-.39-.39-69.54h0C269.47,30.74,238.16-.22,199.75,0Z"/>
+        <rect class="cls-4" x="209.06" y="91.48" width="34.77" height="34.77" rx="17.39" ry="17.39" transform="translate(334.03 -118.19) rotate(89.68)"/>
+        <rect class="cls-4" x="156.9" y="91.77" width="34.77" height="34.77" rx="17.39" ry="17.39" transform="translate(282.46 -65.74) rotate(89.68)"/>
+        <rect class="cls-2" x="221.01" y="103.43" width="10.87" height="10.87" rx="5.43" ry="5.43" transform="translate(334.03 -118.19) rotate(89.68)"/>
+        <rect class="cls-3" x="168.86" y="103.73" width="10.87" height="10.87" rx="5.43" ry="5.43" transform="translate(282.46 -65.74) rotate(89.68)"/>
+      </g>
+      <rect class="cls-1" x="89.17" y="109.55" width="29.89" height="29.89"/>
+      <rect class="cls-1" x="59.78" y="79.66" width="29.89" height="29.89"/>
+      <rect class="cls-1" x="29.89" y="109.55" width="29.89" height="29.89"/>
+      <rect class="cls-1" y="139.44" width="29.89" height="29.89"/>
+      <rect class="cls-1" x="280.95" y="109.55" width="29.89" height="29.89" transform="translate(591.78 248.98) rotate(-180)"/>
+      <rect class="cls-1" x="310.34" y="79.66" width="29.89" height="29.89" transform="translate(650.56 189.21) rotate(-180)"/>
+      <rect class="cls-1" x="340.22" y="109.55" width="29.89" height="29.89" transform="translate(710.34 248.98) rotate(-180)"/>
+      <rect class="cls-1" x="370.11" y="139.44" width="29.89" height="29.89" transform="translate(770.11 308.76) rotate(-180)"/>
+    </g>
+  </g>
+</svg>
