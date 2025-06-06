@@ -170,7 +170,7 @@
         return false;
     });
 
-    $('.navTrigger a').click(function(){
+    $('.navTrigger a:not(".extLink")').click(function(){
         $('.downloadsContent').hide();      
         $('.navTrigger a').removeClass('activeLink');
         $(this).addClass('activeLink');
