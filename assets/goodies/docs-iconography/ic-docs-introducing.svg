@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #05d690;
+      }
+
+      .cls-3 {
+        fill: red;
+      }
+
+      .cls-4 {
+        fill: aqua;
+      }
+
+      .cls-5 {
+        fill: #1a1a1a;
+      }
+    </style>
+  </defs>
+  <g>
+    <path class="cls-1" d="M67.52,124.79h0c-35.96,0-65.1,29.15-65.1,65.1h0v65.1h130.21v-65.1h0c0-35.96-29.15-65.1-65.1-65.1Z"/>
+    <rect class="cls-5" x="75.66" y="210.57" width="32.55" height="32.55" rx="16.28" ry="16.28" transform="translate(318.79 134.91) rotate(90)"/>
+    <rect class="cls-5" x="26.84" y="210.57" width="32.55" height="32.55" rx="16.28" ry="16.28" transform="translate(269.96 183.74) rotate(90)"/>
+    <rect class="cls-2" x="86.85" y="221.76" width="10.17" height="10.17" rx="5.09" ry="5.09"/>
+    <rect class="cls-3" x="38.02" y="221.76" width="10.17" height="10.17" rx="5.09" ry="5.09" transform="translate(269.96 183.74) rotate(90)"/>
+  </g>
+  <path class="cls-1" d="M144.05,144.75l-.49-25.9h-18.72c-10.1,0-18.32-8.22-18.32-18.32V19.32c0-10.1,8.22-18.32,18.32-18.32h110.42c10.1,0,18.32,8.22,18.32,18.32v81.21c0,10.1-8.22,18.32-18.32,18.32h-55.07l-36.13,25.9ZM124.84,3.96c-8.47,0-15.36,6.89-15.36,15.36v81.21c0,8.47,6.89,15.36,15.36,15.36h21.62l.44,23.17,32.33-23.17h56.02c8.47,0,15.36-6.89,15.36-15.36V19.32c0-8.47-6.89-15.36-15.36-15.36h-110.42Z"/>
+  <g>
+    <rect class="cls-3" x="140.9" y="51.93" width="16.6" height="16.6" rx="8.3" ry="8.3" transform="translate(209.43 -88.97) rotate(90)"/>
+    <rect class="cls-2" x="171.75" y="51.93" width="16.6" height="16.6" rx="8.3" ry="8.3"/>
+    <rect class="cls-4" x="202.6" y="51.93" width="16.6" height="16.6" rx="8.3" ry="8.3" transform="translate(271.13 -150.67) rotate(90)"/>
+  </g>
+</svg>

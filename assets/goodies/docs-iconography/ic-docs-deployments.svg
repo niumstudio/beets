@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #05d690;
+      }
+
+      .cls-3 {
+        fill: red;
+      }
+
+      .cls-4 {
+        fill: #1a1a1a;
+      }
+    </style>
+  </defs>
+  <g>
+    <g>
+      <path class="cls-1" d="M209.45,66.29h0c-16.44-22.07-47.67-26.63-69.74-10.19h0s-39.96,29.78-39.96,29.78l29.78,39.96,29.78,39.96,39.96-29.78h0c22.07-16.44,26.63-47.67,10.19-69.74Z"/>
+      <rect class="cls-4" x="145.51" y="115.49" width="24.92" height="24.92" rx="12.46" ry="12.46" transform="translate(361.08 136.17) rotate(143.31)"/>
+      <rect class="cls-4" x="123.18" y="85.52" width="24.92" height="24.92" rx="12.46" ry="12.46" transform="translate(302.94 95.51) rotate(143.31)"/>
+      <rect class="cls-2" x="154.07" y="124.06" width="7.79" height="7.79" rx="3.89" ry="3.89" transform="translate(-45.15 119.73) rotate(-36.69)"/>
+      <rect class="cls-3" x="131.74" y="94.08" width="7.79" height="7.79" rx="3.89" ry="3.89" transform="translate(302.94 95.51) rotate(143.31)"/>
+    </g>
+    <rect class="cls-1" x="-12.55" y="176.03" width="145.82" height="2.99" transform="translate(-94.12 71.25) rotate(-36.7)"/>
+    <rect class="cls-1" x="9.54" y="158.21" width="114.35" height="2.99" transform="translate(-82.22 71.52) rotate(-36.7)"/>
+    <rect class="cls-1" x="22.07" y="175.04" width="114.35" height="2.99" transform="translate(-89.79 82.34) rotate(-36.7)"/>
+    <rect class="cls-1" x="41.07" y="137.26" width="72.39" height="2.99" transform="translate(-67.6 73.67) rotate(-36.7)"/>
+    <rect class="cls-1" x="66.15" y="170.91" width="72.39" height="2.99" transform="translate(-82.74 95.33) rotate(-36.7)"/>
+    <rect class="cls-1" x="63.16" y="119.45" width="40.91" height="2.99" transform="translate(-55.7 73.94) rotate(-36.7)"/>
+    <rect class="cls-1" x="100.77" y="169.92" width="40.91" height="2.99" transform="translate(-78.41 106.42) rotate(-36.7)"/>
+  </g>
+  <g>
+    <polyline class="cls-3" points="183.06 160.32 163.72 174.83 175.98 208.77"/>
+    <polyline class="cls-3" points="111.51 64.42 92.17 78.93 63.07 57.35"/>
+  </g>
+  <path class="cls-3" d="M229.85,94.22c.3-12.32-3.24-24.6-10.96-34.96-6.74-9.04-15.78-15.45-25.89-19.09l62-6.46-25.15,60.51Z"/>
+</svg>

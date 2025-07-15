@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #05d690;
+      }
+
+      .cls-3 {
+        fill: red;
+      }
+
+      .cls-4 {
+        fill: aqua;
+      }
+
+      .cls-5 {
+        fill: #1a1a1a;
+      }
+    </style>
+  </defs>
+  <g>
+    <path class="cls-1" d="M126.67,62.92h0c-30.38,0-55,24.62-55,55h0v55h110v-55h0c0-30.38-24.62-55-55-55Z"/>
+    <rect class="cls-5" x="133.55" y="135.39" width="27.5" height="27.5" rx="13.75" ry="13.75" transform="translate(296.44 1.84) rotate(90)"/>
+    <rect class="cls-5" x="92.3" y="135.39" width="27.5" height="27.5" rx="13.75" ry="13.75" transform="translate(255.19 43.09) rotate(90)"/>
+    <rect class="cls-2" x="143" y="144.84" width="8.59" height="8.59" rx="4.3" ry="4.3"/>
+    <rect class="cls-3" x="101.75" y="144.84" width="8.59" height="8.59" rx="4.3" ry="4.3" transform="translate(255.19 43.09) rotate(90)"/>
+  </g>
+  <rect class="cls-1" x="17.78" y="205.84" width="58.19" height="2.87" transform="translate(-132.82 93.83) rotate(-44.99)"/>
+  <rect class="cls-1" x="171.89" y="48.53" width="64.61" height="2.87" transform="translate(24.47 159) rotate(-44.99)"/>
+  <rect class="cls-1" x="47.93" y="17.56" width="2.87" height="65.23" transform="translate(-21.02 49.6) rotate(-45)"/>
+  <rect class="cls-1" x="205.88" y="180.24" width="2.87" height="55.78" transform="translate(-86.45 207.55) rotate(-45)"/>
+  <rect class="cls-3" x="226.17" y="1" width="25.5" height="25.5" rx="12.75" ry="12.75" transform="translate(225.17 252.66) rotate(-90)"/>
+  <rect class="cls-2" x="4.34" y="1" width="25.5" height="25.5" rx="12.75" ry="12.75"/>
+  <rect class="cls-4" x="224.73" y="228.07" width="25.5" height="25.5" rx="12.75" ry="12.75" transform="translate(-3.34 478.3) rotate(-90)"/>
+  <rect class="cls-1" x="4.34" y="229.5" width="25.5" height="25.5" rx="12.75" ry="12.75" transform="translate(-225.17 259.34) rotate(-90)"/>
+</svg>
